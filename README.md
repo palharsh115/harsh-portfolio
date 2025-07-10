@@ -22,12 +22,6 @@ This project is a modern and visually engaging 3D portfolio website built using 
 │   │   ├── models
 │   │   └── fonts
 │   └── index.html
-├── src
-│   ├── app.js
-│   ├── routes
-│   │   └── index.js
-│   └── views
-│       └── layout.ejs
 ├── package.json
 ├── .gitignore
 └── README.md
@@ -40,7 +34,7 @@ This project is a modern and visually engaging 3D portfolio website built using 
    ```
 2. Navigate to the project directory:
    ```
-   cd 3d-portfolio-website
+   cd public
    ```
 2. Open your browser and go to `index.html` to view the portfolio website.
 
