@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh-Pal-Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+  <div class="logo">
+    <img src="assets/HARSH PAL.svg" alt="Your Logo" />
+  </div>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    
+  </nav>
+</header>
+    <main>
+        <section id="landing">
+            <div class="rotating-words-container" id="rotating-words-container">
+                <!-- Words will be injected here by JS -->
+            </div>
+            <div id="name-card" class="name-card visible">
+                <h1>Hi, I'm Harsh Pal</h1>
+                <p class="subtitle">A Full Stack Developer..</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-animate">
+  <h2 class="projects-title">My <span class="accent">Projects</span></h2>
+  <div class="projects-title-lines">
+    <div class="projects-title-line line1"></div>
+    <div class="projects-title-line line2"></div>
+  </div>
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3 class="project-name">THEREALHEALTH</h3>
+      <p class="project-desc">
+        A healthcare platform with role-based login, Twilio OTP authentication, blog, and appointment booking.
+      </p>
+      <div class="project-tech">
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>MongoDB</span>
+        <span>Twilio</span>
+        <span>EJS</span>
+      </div>
+      <div class="project-links">
+        <a href="https://palharsh115.github.io/trh-download/" target="_blank" class="project-btn">GitHub</a>
+        <!-- <a href="https://therealhealth-demo.com" target="_blank" class="project-btn">Demo</a> -->
+      </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3 class="project-name">Let's Chat</h3>
+      <p class="project-desc">
+        Real-time chat application using Node.js, Socket.io, and MongoDB. Supports instant messaging and multiple rooms.
+      </p>
+      <div class="project-tech">
+        <span>Node.js</span>
+        <span>Socket.io</span>
+        <span>MongoDB</span>
+        <span>Express.js</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/palharsh115/Lets-Chat" target="_blank" class="project-btn">GitHub</a>
+        <!-- <a href="https://letschat-demo.com" target="_blank" class="project-btn">Demo</a> -->
+      </div>
+    </div>
+    <!-- Example for a 3rd project (optional) -->
+    <!--
+    <div class="project-card">
+      <h3 class="project-name">Project Title</h3>
+      <p class="project-desc">
+        Short description of the project.
+      </p>
+      <div class="project-tech">
+        <span>Tech1</span>
+        <span>Tech2</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank" class="project-btn">GitHub</a>
+        <a href="#" target="_blank" class="project-btn">Demo</a>
+      </div>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section section-animate">
+  <h2 class="skills-title">My <span class="accent">Skills</span></h2>
+  <div class="skills-title-lines">
+  <div class="skills-title-line line1"></div>
+  <div class="skills-title-line line2"></div>
+</div>
+  <div class="skills-grid">
+    <!-- Skill Chip Example -->
+    <div class="skill-chip skill-animate" data-tooltip="Advanced: 4+ years experience with Java SE & EE">
+      <img src="assets/java.png" alt="Java">
+      <span>Java</span>
+      <div class="skill-ring advanced"></div>
+    </div>
+    <div class="skill-chip skill-animate" data-tooltip="Advanced: Data science, scripting, automation">
+      <img src="assets/python.png" alt="Python">
+      <span>Python</span>
+      <div class="skill-ring advanced"></div>
+    </div>
+    <div class="skill-chip skill-animate" data-tooltip="Advanced: REST APIs, backend services">
+      <img src="assets/nodejs.png" alt="Node.js">
+      <span>Node.js</span>
+      <div class="skill-ring advanced"></div>
+    </div>
+    <div class="skill-chip skill-animate" data-tooltip="Intermediate: API development, middleware">
+      <img src="assets/express-delivery.png" alt="Express.js">
+      <span>Express.js</span>
+      <div class="skill-ring intermediate"></div>
+    </div>
+    <div class="skill-chip skill-animate" data-tooltip="Intermediate: NoSQL, aggregation, schema design">
+      <img src="assets/database-storage.png" alt="MongoDB">
+      <span>MongoDB</span>
+      <div class="skill-ring intermediate"></div>
+    </div>
+    <div class="skill-chip skill-animate" data-tooltip="Advanced: Semantic HTML, accessibility">
+      <img src="assets/html-5.png" alt="HTML5">
+      <span>HTML5</span>
+      <div class="skill-ring advanced"></div>
+    </div>
+    <div class="skill-chip skill-animate" data-tooltip="Advanced: Responsive, modern CSS">
+      <img src="assets/cascading-style-sheets.png" alt="CSS3">
+      <span>CSS3</span>
+      <div class="skill-ring advanced"></div>
+    </div>
+    <div class="skill-chip skill-animate" data-tooltip="Advanced: Version control, branching">
+      <img src="assets/gitlab.png" alt="Git">
+      <span>Git</span>
+      <div class="skill-ring advanced"></div>
+    </div>
+    <div class="skill-chip skill-animate" data-tooltip="Advanced: Collaboration, open source">
+      <img src="assets/icons8-github.svg" alt="GitHub">
+      <span>GitHub</span>
+      <div class="skill-ring advanced"></div>
+    </div>
+    <div class="skill-chip skill-animate" data-tooltip="Intermediate: API testing, automation">
+      <img src="assets/bookmark.png" alt="Postman">
+      <span>Postman</span>
+      <div class="skill-ring intermediate"></div>
+    </div>
+  </div>
+</section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-animate">
+  <div class="about-bg-glow"></div>
+  <div class="about-flex">
+    <div class="about-photo">
+      <img src="assets/harsh.jpg" alt="Harsh Pal" class="about-profile-pic">
+      <div class="about-photo-gallery">
+        <img src="assets/IMG_4677.PNG" alt="Harsh Pal 2" class="about-gallery-pic">
+        <img src="assets/IMG_0098.JPG" alt="Harsh Pal 3" class="about-gallery-pic">
+        <img src="assets/IMG_6039.JPG" alt="Harsh Pal 4" class="about-gallery-pic">
+      </div>
+    </div>
+    <div class="about-content">
+      <h2 class="about-heading interactive-heading">
+        About <span class="accent">Me</span>
+      </h2>
+      <div class="about-title-line line1"></div>
+      <p>
+        I’m <span class="accent">Harsh Pal</span>, a passionate and aspiring <span class="accent">Full Stack Developer</span> currently pursuing my Bachelor of Computer Applications at Shri Guru Ram Rai University, Dehradun. With a strong foundation in <span class="accent">Java</span> and <span class="accent">Python</span> and growing expertise in modern web technologies like <span class="accent">Node.js</span>, <span class="accent">Express.js</span>, and <span class="accent">MongoDB</span>, I enjoy building dynamic, responsive applications that solve real-world problems.
+      </p>
+      <p>
+        Over the past few months, I’ve developed full-featured projects such as <span class="accent">THEREALHEALTH</span>, a role-based healthcare system with OTP authentication and appointment management, and <span class="accent">Let's Chat</span>, a real-time chat application using Socket.io. These experiences have strengthened my problem-solving abilities, backend development skills, and understanding of scalable system design.
+      </p>
+      <p>
+        I’m constantly learning, exploring new frameworks, and committed to delivering clean, maintainable code. Whether collaborating on a team or working independently, I bring discipline, a strong work ethic, and a deep interest in innovation and user-centric design.
+      </p>
+      <p>
+        <strong>Let’s build something impactful together.</strong>
+      </p>
+      <a href="assets/Harsh_resume.pdf" class="resume-btn" download>Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section section-animate">
+  <div class="contact-info-card">
+    <h2 class="contact-title">Contact <span class="accent">Me</span></h2>
+    <div class="contact-title-lines">
+  <div class="contact-title-line line1"></div>
+  <div class="contact-title-line line2"></div>
+</div>
+    <div class="contact-details">
+      <div class="contact-detail">
+        <span class="contact-icon"><img src="assets/2303149_address_country_earth_globe_international_icon.png" alt="Address"></span>
+        <span>Dehradun, Uttarakhand, India</span>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-icon"><img src="assets/8726191_phone_volume_icon.png" alt="Phone"></span>
+        <span>+91 9917668808</span>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-icon"><img src="assets/1564504_email_letter_mail_message_icon.png" alt="Email"></span>
+      </div>
+    </div>
+    <div class="contact-socials">
+      <a href="https://github.com/palharsh115" class="social-btn" target="_blank" aria-label="GitHub">
+        <img src="assets/icons8-github.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/harsh-pal-660626241/" class="social-btn" target="_blank" aria-label="LinkedIn">
+        <img src="assets/2986200_linkdin_logo_media_social_icon.png" alt="LinkedIn">
+      </a>
+      <a href="mailto:palharsh115@gmail.com" class="social-btn" aria-label="Email">
+        <img src="assets/1564504_email_letter_mail_message_icon.png" alt="Email">
+      </a>
+    </div>
+  </div>
+
+  <!-- Contact Form Card -->
+  <div class="contact-form-card">
+    <h2 class="contact-form-title">Get in Touch</h2>
+    <form class="contact-form" onsubmit="sendWhatsAppMessage(event)">
+      <div class="contact-form-group">
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" name="name" required placeholder="Your Name">
+      </div>
+      <div class="contact-form-group">
+        <label for="contact-email">Email</label>
+        <input type="email" id="contact-email" name="email" required placeholder="you@example.com">
+      </div>
+      <div class="contact-form-group">
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" required placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="contact-form-btn">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Notification Card -->
+<div id="notification-card" style="display:none;">
+  <span id="notification-message"></span>
+</div>
+          </main>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

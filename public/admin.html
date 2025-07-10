@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel - Harsh Pal Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="admin-container">
+    <h1 class="admin-title">Admin Panel</h1>
+    <form class="admin-form">
+      <section>
+        <h2>Update Info</h2>
+        <label>Name: <input type="text" name="name" value="Harsh Pal"></label>
+        <label>Email: <input type="email" name="email" value="palharsh115@gmail.com"></label>
+        <label>Location: <input type="text" name="location" value="Dehradun, Uttarakhand, India"></label>
+        <label>About Me:
+          <textarea name="about" rows="4">I’m Harsh Pal, a passionate and aspiring Full Stack Developer...</textarea>
+        </label>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <div class="admin-projects">
+          <div class="project-item">
+            <input type="text" name="project_title_1" value="THEREALHEALTH" placeholder="Project Title">
+            <textarea name="project_desc_1" rows="2">A healthcare platform with role-based login, Twilio OTP authentication, blog, and appointment booking.</textarea>
+            <input type="text" name="project_tech_1" value="Node.js, Express.js, MongoDB, Twilio, EJS" placeholder="Technologies (comma separated)">
+            <input type="url" name="project_github_1" value="https://github.com/harshpal-portfolio/therealhealth" placeholder="GitHub Link">
+          </div>
+        </div>
+        <button type="button" class="add-btn" onclick="addProject()">+ Add Project</button>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <div class="admin-skills">
+          <input type="text" name="skills" value="Java, Python, Node.js, Express.js, MongoDB, HTML5, CSS3, Git, GitHub, Postman" placeholder="Skills (comma separated)">
+        </div>
+      </section>
+      <button type="submit" class="save-btn">Save Changes</button>
+    </form>
+    <div id="admin-messages">
+      <h2>Contact Messages</h2>
+      <ul id="messages-list"></ul>
+    </div>
+  </div>
+  <script>
+    function addProject() {
+      const container = document.querySelector('.admin-projects');
+      const idx = container.children.length + 1;
+      const div = document.createElement('div');
+      div.className = 'project-item';
+      div.innerHTML = `
+        <input type="text" name="project_title_${idx}" placeholder="Project Title">
+        <textarea name="project_desc_${idx}" rows="2" placeholder="Project Description"></textarea>
+        <input type="text" name="project_tech_${idx}" placeholder="Technologies (comma separated)">
+        <input type="url" name="project_github_${idx}" placeholder="GitHub Link">
+      `;
+      container.appendChild(div);
+    }
+  </script>
+</body>
+</html>
