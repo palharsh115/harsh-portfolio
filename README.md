@@ -42,17 +42,7 @@ This project is a modern and visually engaging 3D portfolio website built using 
    ```
    cd 3d-portfolio-website
    ```
-3. Install the dependencies:
-   ```
-   npm install
-   ```
-
-## Usage
-1. Start the server:
-   ```
-   npm start
-   ```
-2. Open your browser and go to `http://localhost:3000` to view the portfolio website.
+2. Open your browser and go to `index.html` to view the portfolio website.
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
